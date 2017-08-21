@@ -1,0 +1,98 @@
+// source.scss
+@import 'partial/base';
+
+body {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: $openSans;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.clear,
+.clear::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// Header //
+header.site-header {
+  border-bottom: 1px solid $grey;
+  padding-bottom: 30px;
+  .logo {
+    text-align: center;
+    .logoImage {
+      width: 250px;
+    }
+  }
+  .header-information {
+
+    div.socials {
+
+      nav.socials ul {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+
+        & li {
+          position: relative;
+          display: inline-block;
+        }
+
+        & li a:before {
+          font-family: 'FontAwesome';
+          display: inline-block;
+          vertical-align: top;
+          padding: 0 5px;
+          content: '\f08e';
+          font-size: 30px;
+          color: $black;
+          -webkit-font-smoothing: antialiazed;
+        }
+
+        & li a[href*="facebook.com"]::before {
+          content: '\f09a';
+        }
+        & li a[href*="twitter.com"]::before {
+          content: '\f099';
+        }
+
+        & li a[href*="pinterest.com"]::before {
+          content: '\f231';
+        }
+
+        & li a[href*="youtube.com"]::before {
+          content: '\f16a';
+        }
+
+        & li a[href*="instagram.com"]::before {
+          content: '\f16d';
+        }
+      }
+    }
+
+    .address {
+      display: block;
+      clear: both;
+      padding-top: 10px;
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+}

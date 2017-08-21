@@ -1,0 +1,41 @@
+// responsive.scss
+
+@media only screen and (min-width: 768px) {
+
+  header.site-header {
+
+    .container {
+      position: relative;
+    }
+
+    div.logo {
+      text-align: left;
+    }
+
+    .header-information {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      div.socials {
+        nav.socials ul {
+          float: right;
+        }
+      }
+
+      div.address p {
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  header.site-header {
+
+    div.logo {
+      text-align: center;
+    }
+  }
+}
