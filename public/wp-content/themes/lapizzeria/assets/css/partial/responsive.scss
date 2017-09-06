@@ -1,5 +1,21 @@
 // responsive.scss
 
+@media only screen and (min-width: 992px) {
+
+  header.site-header {
+
+    div.logo {
+      text-align: center;
+    }
+  }
+  // Hero //
+  .hero {
+    .hero-text {
+      width: 60%;
+    }
+  }
+}
+
 @media only screen and (min-width: 768px) {
 
   header.site-header {
@@ -28,14 +44,85 @@
       }
     }
   }
+  // Hero //
+  .hero {
+    .hero-text {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  // Main Content //
+  .main-content {
+    margin-top: -90px !important;
+  }
+
+  // Comment Form //
+  .comment-respond {
+    form {
+      .comment-notes {
+        text-align: center;
+      }
+      .logged-in-as a {
+        color: $red;
+        text-align: center;
+        display: block;
+      }
+      label {
+        width: 200px;
+        display: inline-block;
+        text-align: right;
+        padding-right: 20px;
+        font-weight: bold;
+      }
+      input,
+      textarea {
+        padding: 10px;
+        width: calc(100% - 220px);
+      }
+      input[type="submit"] {
+        margin: 0 auto;
+        display: inline-block;
+        border: none;
+        width: auto;
+        background: $red;
+        font-size: 20px;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+  .main-content {
+    #gallery-1 {
+      .gallery-item {
+        width: 25% !important;
+      }
+    }
+  }
+  .home {
+    section.container {
+      #gallery-1 {
+        .gallery-item {
+          width: 25% !important;
+        }
+      }
+    }
+  }
+  form.reservation-form {
+    margin-left: 50%;
+  }
 }
 
-@media only screen and (min-width: 992px) {
-
-  header.site-header {
-
-    div.logo {
-      text-align: center;
+// Max Width //
+@media only screen and (max-width: 767px) {
+  .specialty-content {
+    overflow: visible !important;
+    display: block;
+    margin-bottom: 30px;
+    .information {
+      position: relative !important;
+      opacity: 1 !important;
+      background: $orange !important;
+      padding: 30px !important;
     }
   }
 }

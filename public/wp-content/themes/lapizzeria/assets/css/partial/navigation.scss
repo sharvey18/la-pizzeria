@@ -1,9 +1,5 @@
 // navigation.scss
 
-.sr-text {
-  display: none;
-}
-
 // Main Menu
 .main-menu {
   .mobile-menu {
@@ -41,11 +37,16 @@
           color: $black;
         }
       }
-      li.current_page_item a {
+      li.current_page_item a,
+      li.current_page_parent a {
         border-bottom: 8px solid $red;
       }
     }
   }
+}
+
+.single-specialties nav.site-nav ul li.menu-item-28 a {
+  border-bottom: 8px solid $red;
 }
 
 @media only screen and (min-width: 768px) {
